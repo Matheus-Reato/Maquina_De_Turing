@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+  margin-bottom: 10px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  height: 50px;
+  background-color: #3aa72b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:active {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc; 
+  color: #666;
+  cursor: not-allowed; 
+  box-shadow: none; 
+}
+
+button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+#buttonContainer{
+  margin-bottom: 20px;
+}
+
+#tape {
+  display: flex;
+  justify-content: start;
+  margin: 20px 0;
+}
+
+.tape-cell {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #4a90e2;
+  text-align: center;
+  line-height: 30px;
+  margin: 2px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.current-cell {
+  background-color: #8fbc8f;
+  border: 2px solid #333;
+}
+
+#log {
+  border: 2px solid black;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 600px; 
+  height: 700px; 
+  overflow-y: auto;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px; 
+  line-height: 1.5; 
+}
+
+.log-entry {
+  border-bottom: 1px solid #e0e0e0; 
+  padding: 5px 0; 
+}
+
+.log-entry:last-child {
+  border-bottom: none; 
+}
+
+#status, #headPosition, #result {
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: start;
+  font-weight: bold;
+}
+
+table {
+  width: 70%;
+  border-collapse: collapse;
+  font-size: 18px;
+  margin-top: 40px; 
+  align-self: flex-start;
+}
+
+table th, table td {
+  padding: 12px;
+  border: 1px solid #dddddd;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+table td {
+  text-align: center;
+}
+
+#container {
+  display: flex; 
+}
+
+#esquerda {
+  flex: 1; 
+  margin-right: 20px; 
+  display: flex; 
+  flex-direction: column;
+}
